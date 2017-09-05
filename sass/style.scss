@@ -18,7 +18,7 @@
   * {
     box-sizing: border-box;
   }
-.b-cgames-header-item-cell_player {
+  .b-cgames-header-item-cell_player {
     min-width: 202px;
   }
 
@@ -43,20 +43,21 @@
   }
   .b-cgames-header-item-cell {
     font-family: 'Pragmatica Medium', sans-serif;
-    display: inline-block;
-    font-size: 0;
+    display: block;
+    float: left;
     line-height: 34px;
-    
-    span {
-      font-size: 13px;
-      color: #4e5866; 
-    // text-align: center;
-    }
+    height: 34px;
+    font-size: 13px;
+    color: #4e5866;
+    text-align: center;
+  }
+  .b-cgames-header-item-cell:last-child {
+    float: right;
   }
 
   .b-cgames-info-item-row {
     line-height: 0;
-    font-size:0;
+    font-size: 0;
     background-color: #2a333d;
     height: 97px;
   }
@@ -66,9 +67,9 @@
   }
 
   .b-cgames-info-item-cell {
-    float: left; 
-    // text-align: center;
-    font-size: 0px;
+    float: left;
+    text-align: center;
+    font-size: 13px;
     line-height: 34px;
     img {
       max-width: 20px;
@@ -81,8 +82,8 @@
   .b-c-chest-wrap {
     float: left;
     .b-c-chest-price {
-      display: block; 
-      // text-align: center;
+      display: block;
+      text-align: center;
     }
   }
 }

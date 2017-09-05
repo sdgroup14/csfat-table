@@ -30,12 +30,15 @@
     height: 34px; }
   .b-cgames .b-cgames-header-item-cell {
     font-family: 'Pragmatica Medium', sans-serif;
-    display: inline-block;
-    font-size: 0;
-    line-height: 34px; }
-    .b-cgames .b-cgames-header-item-cell span {
-      font-size: 13px;
-      color: #4e5866; }
+    display: block;
+    float: left;
+    line-height: 34px;
+    height: 34px;
+    font-size: 13px;
+    color: #4e5866;
+    text-align: center; }
+  .b-cgames .b-cgames-header-item-cell:last-child {
+    float: right; }
   .b-cgames .b-cgames-info-item-row {
     line-height: 0;
     font-size: 0;
@@ -45,7 +48,8 @@
     background-color: #4e5866; }
   .b-cgames .b-cgames-info-item-cell {
     float: left;
-    font-size: 0px;
+    text-align: center;
+    font-size: 13px;
     line-height: 34px; }
     .b-cgames .b-cgames-info-item-cell img {
       max-width: 20px; }
@@ -54,6 +58,7 @@
   .b-cgames .b-c-chest-wrap {
     float: left; }
     .b-cgames .b-c-chest-wrap .b-c-chest-price {
-      display: block; }
+      display: block;
+      text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
