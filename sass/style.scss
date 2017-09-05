@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'Pragmatica Medium';
+  src: url('../fonts/pragmaticamedium.eot');
+  src: url('../fonts/pragmaticamedium.eot') format('embedded-opentype'),
+  url('../fonts/pragmaticamedium.woff2') format('woff2'),
+  url('../fonts/pragmaticamedium.woff') format('woff'),
+  url('../fonts/pragmaticamedium.ttf') format('truetype'),
+  url('../fonts/pragmaticamedium.svg#pragmaticamedium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-FB04;
+}
+
+.b-cgames {
+  box-sizing: border-box;
+  max-width: 1170px;
+  * {
+    box-sizing: border-box;
+  }
+.b-cgames-header-item-cell_player {
+    min-width: 202px;
+  }
+
+  .b-cgames-header-item-cell_items {
+    min-width: 33%;
+  }
+  .b-cgames-header-item-cell_value {
+    min-width: 206px;
+  }
+  .b-cgames-header-item-cell_status {
+    min-width: 164px;
+  }
+  .b-cgames-header-item-cell_winact {
+    float: right;
+    min-width: 200px;
+  }
+  .b-cgames-header {
+    background-color: #171c21;
+    font-size: 0;
+    line-height: 0;
+    height: 34px;
+  }
+  .b-cgames-header-item-cell {
+    font-family: 'Pragmatica Medium', sans-serif;
+    display: inline-block;
+    font-size: 0;
+    line-height: 34px;
+    
+    span {
+      font-size: 13px;
+      color: #4e5866; 
+    // text-align: center;
+    }
+  }
+
+  .b-cgames-info-item-row {
+    line-height: 0;
+    font-size:0;
+    background-color: #2a333d;
+    height: 97px;
+  }
+
+  .b-cgames-info-item-row:nth-child(even) {
+    background-color: #4e5866;
+  }
+
+  .b-cgames-info-item-cell {
+    float: left; 
+    // text-align: center;
+    font-size: 0px;
+    line-height: 34px;
+    img {
+      max-width: 20px;
+    }
+  }
+  .b-cgames-info-item-cell:last-child {
+    float: right;
+  }
+
+  .b-c-chest-wrap {
+    float: left;
+    .b-c-chest-price {
+      display: block; 
+      // text-align: center;
+    }
+  }
+}
