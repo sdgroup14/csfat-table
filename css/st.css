@@ -1,0 +1,748 @@
+.coinGames{
+	border-collapse: collapse;
+}
+.coinGames th
+{
+	color: #4e5866;
+  font-weight: normal;
+}
+.clear {
+    clear: both;
+}
+.coinGames tr:nth-child(even){background: #4e5866;}
+.coinflip-head .game-toast__item{
+  margin-top: 0px;
+}
+.coinflip-head .coinheaderblock{
+    width: 236px;
+    float: left;
+    padding-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.coinflip-head .createGames{
+  width: 400px;
+  float: right;
+  padding-right: 0;
+}
+.coinheaderblock.createGames .left{
+  float: left;
+}
+.coinheaderblock.createGames .rigth{
+  float: right;
+}
+
+/*.info__message{
+	text-transform: uppercase;
+}*/
+.headline--border {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+    padding-top: 5px;
+}
+.rBanks.headline__aside,
+.coinheaderblock .headline__aside{
+    color: #f57420 !important;
+    margin: auto !important;
+    text-align: center;
+    padding-bottom: 17px;
+    font-size: 25px;
+    padding-right: 0px;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+.coinGames{
+  width: 100%;
+  float: left;
+}
+.__coinItems .userItems{
+  float: left;
+  /*overflow-x: scroll;*/
+  overflow: hidden;
+  white-space: nowrap;
+  display: -webkit-box;
+}
+
+
+/*.__coinItems .userItems::-webkit-scrollbar
+{
+  width: 6px;
+  height: 2px;
+}
+
+.__coinItems .userItems::-webkit-scrollbar
+{
+  width: 6px;
+  height: 2px;
+}
+
+.__coinItems .userItems::-webkit-scrollbar-thumb
+{
+  background-color: rgba(210,215,221, 0.5);
+  height: 2px;
+}*/
+
+
+._coinPlayers{
+    text-align: center;
+    display: block;
+    white-space: nowrap;
+    width: 200px;
+    color: #4e5866;
+}
+.coinGames tr:nth-child(even) ._coinPlayers{
+  color: #2a333d;
+}
+._coinPlayers .user__photo{
+  display: inline-table;
+	margin: 23px 0px;
+  height: 0;
+}
+.coinheaderblock .info{
+	padding: 15px 0px 0px 15px;
+}
+.coinheaderblock.createGames .info{
+	background: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+    font-family: 'Pragmatica Medium', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+    color: #4e5866;
+
+
+}
+.coinheaderblock.createGames .info .active{
+  color: #0abb90;
+}
+.coinheaderblock.createGames .info .off,
+.coinheaderblock.createGames .info .in{
+  text-transform: none;
+}
+.coinheaderblock.createGames .info .status{
+	margin-bottom: 42px;
+}
+.coinheaderblock.createGames .info .totalValue{
+  margin-bottom: 17px;
+  float: left;
+}
+.coinheaderblock.createGames .info .items .itemsINgame,
+.coinheaderblock.createGames .info .totalValue .total{
+  margin-left: 5px;
+}
+
+.coinheaderblock.createGames .info .items{
+  float: left;
+}
+
+.coinheaderblock.createGames .info .itemsINgame,
+.coinheaderblock.createGames .info .total{
+	font-family: 'Pragmatica Medium', sans-serif;
+    font-size: 22px;
+    color: #f57420;
+    /*font-weight: normal;*/
+    float: right;
+    margin-top: -9px;
+}
+/*.coinheaderblock.createGames .info .createGame button{
+	padding: 0 45px;
+}*/
+.coinGames .__center{
+	text-align: center;
+	/*font-weight: bold;*/
+}
+.coinGames .__center .value{
+  font-size: 14px;
+}
+.coinGames td .needs{
+    margin-top: 10px;
+    /*font-weight: normal;*/
+    font-size: 12px;
+}
+.coinGames td .statusOpen{
+	color: #0abb90;
+}
+.__coinAction{
+	width: 160px;
+}
+.__coinAction button{
+    float: left;
+    height: 38px;
+    line-height: 42px;
+    min-width: 72px;
+    font-size: 13px;
+    text-shadow: none;
+}
+.__coinAction .view{
+	float: right;
+}
+.coinGames thead tr th{
+	background-color: #171c21;
+	padding: 10px 32px
+}
+.coinGames tbody{
+	background-color: #2a333d;
+}
+.select-user{
+	position: relative;
+}
+.headerview .user__photo .select-user{
+	left: -15px;
+    top: -15px;
+}
+.select-user img{
+	width: 25px;
+}
+.select-user img{
+    position: absolute;
+    z-index: 1;
+    left: -5px;
+    top: -5px;
+}
+.coinGames .user__photo{
+	overflow: visible;
+}
+.user__photo-src{
+    position: relative;
+    -webkit-align-self: top;
+    -ms-flex-item-align: top;
+    -ms-grid-row-align: top;
+    align-self: top;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -moz-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+}
+._coinPlayers .vs{  
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.winner-user img{	
+	width: 45px;
+}
+.__coinItems .userItems{position: relative; max-width: 397px;  }
+.__coinAction{
+	width: 160px;
+	padding: 20px;
+}
+.__coinAction .user__photo{
+    float: left;
+    margin-top: -6px;
+    position: absolute;
+}
+.__coinItems p{
+	text-align: left;
+	font-size: 11px;
+	/*font-weight: normal;*/
+  color: #4e5866;
+	margin: 0;
+  line-height: 0px;
+  margin-top: 14px;
+}
+.coinGames tr:nth-child(even) .__coinItems p {
+    color: #2a333d;
+}
+
+.__coinItems .userItems .mini-card {
+  min-width: auto;
+  max-width: 65px;
+}
+.__coinItems .userItems .mini-card--common .mini-card__body{
+  border: none;
+}
+.__coinItems .userItems .mini-card__body{
+  padding-top: 0;
+}
+.__coinItems .userItems .mini-card__body-price{
+  font-size: 11px;
+  margin-top: -3px;
+  color: #93979c;
+}
+.__coinItems .mini-card__image:before{
+    top: 11px;
+    bottom: 3px;
+    left: 0px;
+    right: 0px;
+}
+.__coinItems .userItems .mini-card__tooltip {
+    font-size: 7px;
+    line-height: 0px;
+    margin-top: -20px;
+    width: 100%;
+    white-space: nowrap;
+    margin-left: -45px;
+}
+.__coinItems .userItems .mini-card__tooltip span {
+    padding: 6px 12px;
+}
+.__coinItems .mini-card__image img {
+  max-width: 60px;
+  max-height: 60px;
+}
+.__coinItems .mini-card__tooltip:after {
+  margin-left: 1px;  
+}
+
+/*.userItems{
+	width: 403px;
+}*/
+/*.coinGames tr:nth-child(even) .userItems:before{
+	background: linear-gradient(to left, #4e5866, rgba(0, 0, 0, 0));
+}*/
+.vievModal .user__photo {
+    width: 100px;
+    height: auto;
+}
+/*.vievModal .user__photo,*/
+.vievModal .user__photo-src{
+  height: 100px !important;
+  width: 100px !important;
+}
+.vievModal .user__photo{
+  overflow: visible;
+  /*left: 76px;*/
+    display: inline-block;
+}
+
+.vievModal .user__photo-src{
+    position: relative;
+    -webkit-align-self: top;
+    -ms-flex-item-align: top;
+    -ms-grid-row-align: top;
+    align-self: top;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -moz-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    border-radius: 0%;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+}
+.vievHeder{
+  display: flex;
+  /*width: 592px;*/
+}
+.vievModal .select-user img {
+  width: 40px;
+}
+
+.vievModal .headerview{
+/*  float: left;
+  padding: 0px 50px;*/
+  text-align: center;
+    width: 33%;
+}
+.vievModal .headerview.user-2{
+  float: right;
+}
+.headerview.timer .ti{
+  /*margin: -3px -128px 0px 0px;*/
+}
+.choseitems .modal-items__price {
+    margin-left: 523px;
+    margin-top: 20px;
+}
+.modal-items__total {
+    margin-top: 10px;
+}
+.choses .text {
+    font-weight: bold;
+}
+
+.flip-container {
+  perspective: 1000;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+}
+.flip-me-ct .flipper, .flip-container.hover .flipper, .flip-container.flip .flipper {
+  transition: 4.5s;
+  -webkit-transition: 4.5s;
+  transform: rotateY(1620deg);
+  -moz-transform: rotateY(1620deg);  /* FF3.5/3.6 */
+  -o-transform: rotateY(1620deg);  /* Opera 10.5 */
+  -webkit-transform: rotateY(1620deg);  /* Saf3.1+ */
+}
+
+.flip-me-t .flipper, .flip-container.hover .flipper, .flip-container.flip .flipper {
+  transform: rotateY(1440deg);
+  -moz-transform: rotateY(1440deg);  /* FF3.5/3.6 */
+  -o-transform: rotateY(1440deg);  /* Opera 10.5 */
+  -webkit-transform: rotateY(1440deg);  /* Saf3.1+ */
+}
+
+.flip-container, .front, .back {
+    width: 80px;
+    height: 80px;
+}
+.flip-container{
+  /*display: none;*/
+    margin: 40px auto 5px;
+}
+.win1, .win2 {
+    margin-bottom: 10px;
+    height: 20px;
+
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 700;
+    color: #f57420;
+    opacity:0;
+    text-transform: uppercase;
+    /* Text style for "WINNE" */
+    letter-spacing: 1.66px;
+}
+.winner .win1, .winner .win2 {
+    opacity: 1;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 4s;
+  -webkit-transition: 4s;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.roundInfo{
+  display: flex;
+  float: left;
+  text-align: center;
+  margin-top: 20px;
+    width: 100%;
+}
+.lister{
+  float: left;
+  padding: 0 42px;
+  font-family: 'Pragmatica Book', sans-serif;
+    width: 33%;
+}
+.lister .userName{
+  white-space: nowrap;
+  color: #0be0ac;
+}
+.userBets .userBet{
+  width: 340px;
+  /*display: inline-block;*/
+    float: left;
+}
+.userBet tr {
+    background: #2a333d;
+}
+.userBet tr:nth-child(even) {
+    background: #4e5866;
+}
+
+.vievModal .select-user img.ct{
+  /*left: 80px !important;*/
+}
+.uInfo{
+    color: #fff;
+    font-size: 17px;
+    margin: 5px 0 30px;
+    text-align: center;
+    display: block;
+}
+.uInfo span{
+  padding: 0 10px 0px 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+.vievModal .userBet{
+  border-collapse: collapse;
+}
+.vievModal .userBet thead tr th {
+    background-color: #000;
+    padding: 10px;
+    white-space: nowrap;
+}
+.vievModal .userBet thead tr th.pr {
+    padding: 10px 0px;
+    width: 55px;
+    text-align: left;
+}
+.vievModal .userBet thead tr th.pr span{
+    width: 55px;
+    display: block;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+.vievModal .userBet tbody tr td {
+    /*background: #4e5866;*/
+    white-space: nowrap;
+    padding: 0px 5px;
+}
+.vievModal .userBet tbody tr td.itemName span {
+    max-width: 224px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*.vievModal .userBet tbody tr td.itemImg,*/
+.vievModal .userBet tbody tr td.itemImg img {
+  width: 44px;
+}
+.vievModal .userBet tbody tr td.itemImg {
+    padding: 5px 10px 5px 3px;
+    width: 50px;
+}
+.vievModal .userBet.user-1{
+    margin-right: 40px;
+}
+.vievModal .userBet.user-2{
+  /*padding-left: 45px;*/
+    margin-right: 0;
+}
+.vievModal .userName.user__body-name{
+    /*max-width: 192px;*/
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #0cc297;
+}
+.vievModal .userBet tbody tr td.itemPrice {
+    padding: 0;
+}
+.vievModal .userName{
+    color: #0cc297;
+}
+.userBets {
+    font-family: 'Pragmatica Book', sans-serif;
+    font-size: 12px;
+}
+.vievModal .loser .userName, .vievModal .loser .uInfo span {
+    color: #4e5866;
+}
+
+.vievModal .headerview.timer{
+  /*left: 9px;*/
+}
+.vievModal .modal-put-items__cnt:before{
+  background-color: none;
+  left: 0;
+  right: 0;
+  height: 0;
+}
+
+.vievModal .modal-put-items__title:before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    height: 2px;
+    background-color: #4e5866;
+    width: auto;
+    top: 65px;
+}
+.roundInfos{
+    text-align: center;
+    margin: 18px 0px 20px 0px;
+    color: #4e5866;
+
+    font-family: 'Pragmatica Light';
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.92px;
+    /* Text style for "Unaccepted" */
+    /*color: #d2d7dd;*/
+
+
+}
+.vievModal .userBet thead tr th.items{
+    color: #4e5866;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Pragmatica Light';
+    font-size: 13px;
+}
+.uName {
+    margin-top: 10px;
+}
+.tradestatus .statusTrade{
+  color: #d2d7dd;
+}
+/*.__coinStatus .countSecond{
+    z-index: 200;
+    position: relative;
+}
+.__coinStatus .countSecond span{
+    position: absolute;
+    margin: 19px 17px;
+    color: #fff;
+}
+.__coinStatus .bg-red{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: #f47d7d;
+    border-radius: 50%;
+    margin: -48px 0px 0px 41px;
+    z-index: 20;
+}*/
+.needtobet {
+    margin-left: 523px;
+    margin-top: 5px;
+}
+.choses{
+  margin: 10px 0px 10px 0px;
+}
+.choses img{
+  width: 50px;
+  cursor: pointer;
+}
+.choses span.select{
+    border: 3px solid #0cc297;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: inline-block;
+    padding: 1px;
+}
+.choses span.pp{
+    margin-left: 15px;
+}
+
+/*.userItems:before {
+   content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  pointer-events: none;
+  background: linear-gradient(to left, #2a333d, rgba(0, 0, 0, 0));
+}*/
+.shadowItems{
+  position: absolute;
+  width: 105px;
+  height: 60px;
+  background: linear-gradient(to left, #2a333d, rgba(0, 0, 0, 0));
+  margin-left: 25%;
+    z-index: 100;
+  /*background-color: red;*/
+}
+.coinGames tr:nth-child(even) .shadowItems{
+  background: linear-gradient(to left, #4e5866, rgba(0, 0, 0, 0));
+}
+@media(max-width: 1317px){
+  .coinflip-head .coinheaderblock.info-blade{
+    width: 18%;
+  }
+  .coinheaderblock.createGames{
+    right: 0;
+    position: relative;
+    float: right;
+  }
+}
+@media(max-width: 1200px){
+  .shadowItems{
+    display: none;
+  }
+}
+
+@media(max-width: 1055px){
+  .__coinAction .view,
+  .__coinAction .user__photo,
+  .__coinAction button {
+    float: none;
+    display: inline-block;
+    margin-top: 2px;
+  }
+}
+
+.__coinItems.__center{
+  width: 34%;
+}
+.table-player{
+  width: 136px;
+}
+
+@media (max-width: 1195px){
+  .coinflip-head .coinheaderblock.info-blade {
+      width: 15%;
+  }
+}
+@media(max-width: 1100px){
+  .coinflip-head .coinheaderblock.info-blade {
+      width: 30%;
+      /*margin-bottom: -90px;*/
+      text-align: center;
+      display: block;
+      float: none;
+      display: inline-flex;
+      padding-right: 5px;
+      padding-left: 5px;     
+  }
+  .coinheaderblock.createGames{
+    float: left;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-top: -5px;
+  }  
+}
+
+@media (max-width: 1023px){
+  .modal-items__total {
+    margin-top: 40px;
+  }
+}
+
+.coinflip-head .game-info__item--bank{
+  margin: 0;
+}
+.coinflip-head .headline--border{
+  padding-top: 0;
+}
+
+.coinflip-head .btn_md {
+    height: 40px;
+    line-height: 43px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    min-width: 100px;
+    width: 200px;
+}
+.coinGames{
+  font-family: 'Pragmatica Medium', sans-serif;
+  font-size: 13px;
+  color: #d2d7dd;
+}
