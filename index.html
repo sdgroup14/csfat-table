@@ -1239,6 +1239,13 @@
           });
 
 
+          // $('b-cgames-item__items').perfectScrollbar({
+          //   useBothWheelAxes: true,
+          //   suppressScrollY: true
+          // });
+
+
+
         });
         </script>
         <div class="wrapper wrapper--colorful">
@@ -1330,45 +1337,137 @@
               <div class="wrapper__space">
                 <div class="b-cgames">
                   <div class="b-cgames-header">
-                    <div class="b-cgames-header-item-cell b-cgames-header-item-cell_player">players</div>
-                    <div class="b-cgames-header-item-cell b-cgames-header-item-cell_items">items</div>
-                    <div class="b-cgames-header-item-cell b-cgames-header-item-cell_value">value</div>
-                    <div class="b-cgames-header-item-cell b-cgames-header-item-cell_status">status</div>
-                    <div class="b-cgames-header-item-cell b-cgames-header-item-cell_winact">winner/action</div>
+                    <div class="b-cgames-header-item_cell b-cgames-item__player">players</div>
+                    <div class="b-cgames-header-item_cell b-cgames-item__items">items</div>
+                    <div class="b-cgames-header-item_cell b-cgames-item__value">value</div>
+                    <div class="b-cgames-header-item_cell b-cgames-item__status">status</div>
+                    <div class="b-cgames-header-item_cell b-cgames-item__winact">winner/action</div>
                   </div>
                   <div class="b-cgames-info">
-                    <div class="b-cgames-info-item-row clearfix">
-                      <div class="b-cgames-info-item-cell b-cgames-header-item-cell_player">
-                        <div class="b-c-player-img">
-                          <img class="" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/27/2745e3e961a6012159e83ac9c3de16628811c247_full.jpg" alt="cchhiiss">
-                        </div>
-                      </div>
-                      <div class="b-cgames-info-item-cell b-cgames-header-item-cell_items">
-                        <div class="clearfix">
-                          <div class="b-c-chest-wrap">
-                            <img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/1544067968/120fx100f">
-                            <span class="b-c-chest-price">12312</span>
+                    <div class="b-cgames-info-item_row clearfix">
+                      <div class="b-cgames-info-item_cell b-cgames-item__player">
+                        <div class="b-cgames-info-item_cell__wrapper">
+                          <div class="b-c-player-img__team">
+                            <img class="t" src="http://new.csfate.com/money/ct.png">
                           </div>
-                          <div class="b-c-chest-wrap">
-                            <img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/1544067968/120fx100f">
-                            <span class="b-c-chest-price">12312</span>
-                          </div>
-                          <div class="b-c-chest-wrap">
-                            <img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/1544067968/120fx100f">
-                            <span class="b-c-chest-price">12312</span>
+                          <div class="b-c-player-img">
+                            <img class="" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/27/2745e3e961a6012159e83ac9c3de16628811c247_full.jpg" alt="cchhiiss">
                           </div>
                         </div>
                       </div>
-                      <div class="b-cgames-info-item-cell b-cgames-header-item-cell_value">
-                        <p>0.15</p>
-                        <p>needs: 0.14 - 0.17</p>
+                      <div class="b-cgames-info-item_cell b-cgames-item__items clearfix">
+                        <div class="b-c-chests-counter-container"><span class="b-c-chests-counter_val">5</span> items:</div>
+                        <div class="b-c-chests_container clearfix">
+                          <div class="b-c-chest__wrapper">
+                            <img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/1544067968/120fx100f">
+                            <span class="b-c-chest__price">0.03</span>
+                            <div class="b-c-chest__tooltip"><span>Operation Wildfire Case</span></div>
+                          </div>
+                          <div class="b-c-chest__wrapper">
+                            <img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/1544067968/120fx100f">
+                            <span class="b-c-chest__price">0.03</span>
+                          </div>
+                          <div class="b-c-chest__wrapper">
+                            <img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/1544067968/120fx100f">
+                            <span class="b-c-chest__price">0.03</span>
+                          </div>
+                          <div class="b-c-chest__wrapper">
+                            <img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/1544067968/120fx100f">
+                            <span class="b-c-chest__price">0.03</span>
+                          </div>
+                          <div class="b-c-chest__wrapper">
+                            <img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/1544067968/120fx100f">
+                            <span class="b-c-chest__price">0.03</span>
+                          </div>
+                        </div>
+                        <div class="b-cgames-info-item_tint"></div>
                       </div>
-                      <div class="b-cgames-info-item-cell b-cgames-header-item-cell_status">
-                        <span>open</span>
+                      <div class="b-cgames-info-item_cell b-cgames-item__value">
+                        <div class="b-cgames-info-item_cell__wrapper">
+                          <div class="b-c__value-item"><span class="b-c__value-cash-icon">
+                            <svg class="icon-usd cash-icon"><use xlink:href="#icon-usd" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                          </svg></span><span class="b-c__value-val">0.15</span></div>
+                          <div class="b-c__value-item">needs: <span class="b-c__value-cash-icon">
+                            <svg class="icon-usd cash-icon"><use xlink:href="#icon-usd" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                          </svg></span><span>0.14</span> - <span class="b-c__value-cash-icon">
+                            <svg class="icon-usd cash-icon"><use xlink:href="#icon-usd" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                          </svg></span><span>0.17</span>
+                          </div>
+                        </div>
                       </div>
-                      <div class="b-cgames-info-item-cell b-cgames-header-item-cell_winact">
-                        <button>join</button>
-                        <button>view</button>
+                      <div class="b-cgames-info-item_cell b-cgames-item__status">
+                        <span class="b-c__status__check b-c__status__check_open">open</span>
+                      </div>
+                      <div class="b-cgames-info-item_cell b-cgames-item__winact">
+                        <div class="b-cgames-info-item_cell__wrapper">
+                          <button class="b-cgames-btn b-cgames-btn_orange">join</button>
+                          <button class="b-cgames-btn b-cgames-btn_green">view</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="b-cgames-info-item_row clearfix ">
+                      <div class="b-cgames-info-item_cell b-cgames-item__player">
+                        <div class="b-cgames-info-item_cell__wrapper">
+                          <div class="b-c-player-img__team">
+                            <img class="t" src="http://new.csfate.com/money/ct.png">
+                          </div>
+                          <div class="b-c-player-img">
+                            <img class="" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/27/2745e3e961a6012159e83ac9c3de16628811c247_full.jpg" alt="cchhiiss">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="b-cgames-info-item_cell b-cgames-item__items clearfix b-cgames-item__items2">
+                        <div class="b-c-chests-counter-container"><span class="b-c-chests-counter_val">5</span> items:</div>
+                        <div class="b-c-chests_container clearfix">
+                          <div class="b-c-chest__wrapper">
+                            <img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/1544067968/120fx100f">
+                            <span class="b-c-chest__price">0.03</span>
+                            <div class="b-c-chest__tooltips"><span>Operation Wildfire Case</span></div>
+                          </div>
+                          <div class="b-c-chest__wrapper">
+                            <img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/1544067968/120fx100f">
+                            <span class="b-c-chest__price">0.03</span>
+                          </div>
+                          <div class="b-c-chest__wrapper">
+                            <img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/1544067968/120fx100f">
+                            <span class="b-c-chest__price">0.03</span>
+                          </div>
+                        </div>
+                        <div class="b-cgames-info-item_tint"></div>
+                      </div>
+                      <div class="b-cgames-info-item_cell b-cgames-item__value">
+                        <div class="b-cgames-info-item_cell__wrapper">
+                          <div class="b-c__value-item"><span class="b-c__value-cash-icon">
+                            <svg class="icon-usd cash-icon"><use xlink:href="#icon-usd" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                          </svg></span><span class="b-c__value-val">0.15</span></div>
+                          <div class="b-c__value-item">needs: <span class="b-c__value-cash-icon">
+                            <svg class="icon-usd cash-icon"><use xlink:href="#icon-usd" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                          </svg></span><span>0.14</span> - <span class="b-c__value-cash-icon">
+                            <svg class="icon-usd cash-icon"><use xlink:href="#icon-usd" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                          </svg></span><span>0.17</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="b-cgames-info-item_cell b-cgames-item__status">
+                        <div class="b-cgames-info-item_cell__wrapper">
+                          <div class="b-cgames-item__status_img">
+                            <div class="b-c-player-img">
+                              <img class="t" src="http://new.csfate.com/money/ct.png"> </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="b-cgames-info-item_cell b-cgames-item__winact">
+                        <div class="b-cgames-info-item_cell__wrapper">
+                          <div class="b-cgames-item__winact_winner">
+                            <div class="b-c-player-img">
+                              <img class="" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/27/2745e3e961a6012159e83ac9c3de16628811c247_full.jpg" alt="cchhiiss">
+                              <div class="b-c-player-img__team">
+                                <img class="t" src="http://new.csfate.com/money/ct.png">
+                              </div>
+                            </div>
+                          </div>
+                          <button class="b-cgames-btn b-cgames-btn_green">view</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1377,304 +1476,305 @@
             </div>
           </div>
         </div>
-        <div class="modal vievModal" id="VievGames">
-          <div class="modal__inn">
-            <div class="modal__inn__inn">
-              <div class="modal__content modal-put-items">
-                <a href="#" class="modal-close"></a>
-                <div class="modal-put-items__tab active">
-                  <div class="modal-put-items__title clearfix">
-                    <span>Coinflip round #323232</span> <span class="tradestatus">trade status: <span class="statusTrade">send</span></span>
+      </div>
+      <div class="modal vievModal" id="VievGames">
+        <div class="modal__inn">
+          <div class="modal__inn__inn">
+            <div class="modal__content modal-put-items">
+              <a href="#" class="modal-close"></a>
+              <div class="modal-put-items__tab active">
+                <div class="modal-put-items__title clearfix">
+                  <span>Coinflip round #323232</span> <span class="tradestatus">trade status: <span class="statusTrade">send</span></span>
+                </div>
+                <div class="modal-put-items__cnt clearfix">
+                  <div class="roundInfos">
+                    <span class="hash">Hash: 1f858b3ffed1a0a700b00123f98c36d4238a0dd9</span>
                   </div>
-                  <div class="modal-put-items__cnt clearfix">
-                    <div class="roundInfos">
-                      <span class="hash">Hash: 1f858b3ffed1a0a700b00123f98c36d4238a0dd9</span>
-                    </div>
-                    <div class="vievHeder">
-                      <div class="headerview user-1">
-                        <div class="user__photo">
-                          <div class="select-user"><img class="t" src="/money/t.png"></div>
-                          <img class="user__photo-src" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/1f/1f858b3ffed1a0a700b00123f98c36d4238a0dd9_full.jpg">
-                        </div>
+                  <div class="vievHeder">
+                    <div class="headerview user-1">
+                      <div class="user__photo">
+                        <div class="select-user"><img class="t" src="/money/t.png"></div>
+                        <img class="user__photo-src" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/1f/1f858b3ffed1a0a700b00123f98c36d4238a0dd9_full.jpg">
                       </div>
-                      <div class="headerview timer">
-                        <div class="ti countdownView-1"></div>
-                        <!--ico-->
-                        <div class=" flip-container flip-me-ct ">
-                          <div class="flipper">
-                            <div class="front">
-                              <img heigth="180" width="180" src="/money/t.png">
-                            </div>
-                            <div class="back">
-                              <img heigth="180" width="180" src="/money/ct.png">
-                            </div>
+                    </div>
+                    <div class="headerview timer">
+                      <div class="ti countdownView-1"></div>
+                      <!--ico-->
+                      <div class=" flip-container flip-me-ct ">
+                        <div class="flipper">
+                          <div class="front">
+                            <img heigth="180" width="180" src="/money/t.png">
+                          </div>
+                          <div class="back">
+                            <img heigth="180" width="180" src="/money/ct.png">
                           </div>
                         </div>
                       </div>
-                      <div class="headerview user-2">
-                        <div class="user__photo">
-                          <div class="select-user"><img class="ct" src="/money/ct.png"></div>
-                          <img class="user__photo-src" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/ba/badbe182929056d2f4173640d2561e19af2bfc67_full.jpg">
-                        </div>
+                    </div>
+                    <div class="headerview user-2">
+                      <div class="user__photo">
+                        <div class="select-user"><img class="ct" src="/money/ct.png"></div>
+                        <img class="user__photo-src" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/ba/badbe182929056d2f4173640d2561e19af2bfc67_full.jpg">
                       </div>
                     </div>
-                    <div class="roundInfo">
-                      <div class="lister user-1">
-                        <div class="uName"><span class="userName user__body-name">Gvozd csfate.com csgoblocks.nets</span></div>
-                        <div class="uInfo"><span class="uBank">121.12$</span><span class="uChance">43%</span></div>
-                      </div>
-                      <div class="lister info">
-                        <span class="rBanks headline__aside">21 212$</span>
-                      </div>
-                      <div class="lister user-2">
-                        <div class="uName"><span class="userName">PesunTrasum csfate.com</span></div>
-                        <div class="uInfo"><span class="uBank">1222.12$</span><span class="uChance">73%</span></div>
-                      </div>
+                  </div>
+                  <div class="roundInfo">
+                    <div class="lister user-1">
+                      <div class="uName"><span class="userName user__body-name">Gvozd csfate.com csgoblocks.nets</span></div>
+                      <div class="uInfo"><span class="uBank">121.12$</span><span class="uChance">43%</span></div>
                     </div>
-                    <div class="userBets">
-                      <table class="userBet user-1">
-                        <thead>
-                          <tr>
-                            <th class="items">5 items:</th>
-                            <th class="price"></th>
-                            <th class="pr"></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="itemImg"><img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/2377357027/120fx100f"></td>
-                            <td class="itemName"><span>AK-47 | Case Hardened (Factory New)</span></td>
-                            <td class="itemPrice">$231</td>
-                          </tr>
-                          <tr>
-                            <td class="itemImg"><img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/2377357027/120fx100f"></td>
-                            <td class="itemName"><span>AK-47 | Case Hardened (Factory New)</span></td>
-                            <td class="itemPrice">$231</td>
-                          </tr>
-                          <tr>
-                            <td class="itemImg"><img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/2377357027/120fx100f"></td>
-                            <td class="itemName"><span>AK-47 | Case Hardened (Factory New)</span></td>
-                            <td class="itemPrice">$231</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <table class="userBet user-2">
-                        <thead>
-                          <th class="items">6 items:</th>
+                    <div class="lister info">
+                      <span class="rBanks headline__aside">21 212$</span>
+                    </div>
+                    <div class="lister user-2">
+                      <div class="uName"><span class="userName">PesunTrasum csfate.com</span></div>
+                      <div class="uInfo"><span class="uBank">1222.12$</span><span class="uChance">73%</span></div>
+                    </div>
+                  </div>
+                  <div class="userBets">
+                    <table class="userBet user-1">
+                      <thead>
+                        <tr>
+                          <th class="items">5 items:</th>
                           <th class="price"></th>
                           <th class="pr"></th>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="itemImg"><img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/2377357027/120fx100f"></td>
-                            <td class="itemName"><span>AK-47 | Case Hardened (Factory New)</span></td>
-                            <td class="itemPrice">$231</td>
-                          </tr>
-                          <tr>
-                            <td class="itemImg"><img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/2377357027/120fx100f"></td>
-                            <td class="itemName"><span>AK-47 | Case Hardened (Factory New)</span></td>
-                            <td class="itemPrice">$231</td>
-                          </tr>
-                          <tr>
-                            <td class="itemImg"><img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/2377357027/120fx100f"></td>
-                            <td class="itemName"><span>AK-47 | Case Hardened (Factory New)</span></td>
-                            <td class="itemPrice">$231</td>
-                          </tr>
-                          <tr>
-                            <td class="itemImg"><img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/2377357027/120fx100f"></td>
-                            <td class="itemName"><span>AK-47 | Case Hardened (Factory New)</span></td>
-                            <td class="itemPrice">$231</td>
-                          </tr>
-                          <tr>
-                            <td class="itemImg"><img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/2377357027/120fx100f"></td>
-                            <td class="itemName"><span>AK-47 | Case Hardened (Factory New)</span></td>
-                            <td class="itemPrice">$231</td>
-                          </tr>
-                          <tr>
-                            <td class="itemImg"><img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/2377357027/120fx100f"></td>
-                            <td class="itemName"><span>AK-47 | Case Hardened (Factory New)</span></td>
-                            <td class="itemPrice">$231</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="itemImg"><img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/2377357027/120fx100f"></td>
+                          <td class="itemName"><span>AK-47 | Case Hardened (Factory New)</span></td>
+                          <td class="itemPrice">$231</td>
+                        </tr>
+                        <tr>
+                          <td class="itemImg"><img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/2377357027/120fx100f"></td>
+                          <td class="itemName"><span>AK-47 | Case Hardened (Factory New)</span></td>
+                          <td class="itemPrice">$231</td>
+                        </tr>
+                        <tr>
+                          <td class="itemImg"><img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/2377357027/120fx100f"></td>
+                          <td class="itemName"><span>AK-47 | Case Hardened (Factory New)</span></td>
+                          <td class="itemPrice">$231</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="userBet user-2">
+                      <thead>
+                        <th class="items">6 items:</th>
+                        <th class="price"></th>
+                        <th class="pr"></th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="itemImg"><img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/2377357027/120fx100f"></td>
+                          <td class="itemName"><span>AK-47 | Case Hardened (Factory New)</span></td>
+                          <td class="itemPrice">$231</td>
+                        </tr>
+                        <tr>
+                          <td class="itemImg"><img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/2377357027/120fx100f"></td>
+                          <td class="itemName"><span>AK-47 | Case Hardened (Factory New)</span></td>
+                          <td class="itemPrice">$231</td>
+                        </tr>
+                        <tr>
+                          <td class="itemImg"><img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/2377357027/120fx100f"></td>
+                          <td class="itemName"><span>AK-47 | Case Hardened (Factory New)</span></td>
+                          <td class="itemPrice">$231</td>
+                        </tr>
+                        <tr>
+                          <td class="itemImg"><img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/2377357027/120fx100f"></td>
+                          <td class="itemName"><span>AK-47 | Case Hardened (Factory New)</span></td>
+                          <td class="itemPrice">$231</td>
+                        </tr>
+                        <tr>
+                          <td class="itemImg"><img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/2377357027/120fx100f"></td>
+                          <td class="itemName"><span>AK-47 | Case Hardened (Factory New)</span></td>
+                          <td class="itemPrice">$231</td>
+                        </tr>
+                        <tr>
+                          <td class="itemImg"><img src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/2377357027/120fx100f"></td>
+                          <td class="itemName"><span>AK-47 | Case Hardened (Factory New)</span></td>
+                          <td class="itemPrice">$231</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="modal" id="putItemsModalJoin">
-          <div class="modal__inn">
-            <div class="modal__inn__inn">
-              <div class="modal__content modal-put-items">
-                <a href="#" class="modal-close"></a>
-                <div class="modal-put-items__tab active" style="visibility: hidden !important;">
-                  <div class="modal-put-items__title">
-                    <span>Choose the way to add items</span>
-                  </div>
-                  <div class="modal-put-items__cnt clearfix">
-                    <div class="modal-put-items__cnt__block">
-                      <div class="modal-put-items__btn">
-                        <button class="btn btn_md btn_orange btn_full js-next-modal-tab modal-firststep">
-                          <span>SEND VIA THE SITE</span>
-                        </button>
-                      </div>
-                      <div class="modal-put-items__txt">
-                        <span>You can choose items via our site and add the to the game.</span>
-                      </div>
+      </div>
+      <div class="modal" id="putItemsModalJoin">
+        <div class="modal__inn">
+          <div class="modal__inn__inn">
+            <div class="modal__content modal-put-items">
+              <a href="#" class="modal-close"></a>
+              <div class="modal-put-items__tab active" style="visibility: hidden !important;">
+                <div class="modal-put-items__title">
+                  <span>Choose the way to add items</span>
+                </div>
+                <div class="modal-put-items__cnt clearfix">
+                  <div class="modal-put-items__cnt__block">
+                    <div class="modal-put-items__btn">
+                      <button class="btn btn_md btn_orange btn_full js-next-modal-tab modal-firststep">
+                        <span>SEND VIA THE SITE</span>
+                      </button>
                     </div>
-                    <div class="modal-put-items__cnt__block">
-                      <div class="modal-put-items__btn">
-                        <a href="" target="_blank" class="btn btn_md btn_green btn_full">
+                    <div class="modal-put-items__txt">
+                      <span>You can choose items via our site and add the to the game.</span>
+                    </div>
+                  </div>
+                  <div class="modal-put-items__cnt__block">
+                    <div class="modal-put-items__btn">
+                      <a href="" target="_blank" class="btn btn_md btn_green btn_full">
                     <span>GIVE TO BOT <b>(VIA STEAM)</b></span>
                   </a>
-                      </div>
-                      <div class="modal-put-items__txt">
-                        <span>Go to Steam site to choose items and add them to the game.</span>
-                      </div>
+                    </div>
+                    <div class="modal-put-items__txt">
+                      <span>Go to Steam site to choose items and add them to the game.</span>
                     </div>
                   </div>
-                  <div class="modal-put-items__bottom">
-                    <label class="modal-put-items__check">
-                      <input type="checkbox" checked class="rhidden-input">
-                      <span class="modal-put-items__check__icon"></span>
-                      <span class="modal-put-items__check__txt">
+                </div>
+                <div class="modal-put-items__bottom">
+                  <label class="modal-put-items__check">
+                    <input type="checkbox" checked class="rhidden-input">
+                    <span class="modal-put-items__check__icon"></span>
+                    <span class="modal-put-items__check__txt">
                                     Do not show the way to add items again
                                 </span>
-                    </label>
-                    <div class="modal-put-items__bottom__txt">
-                      <span>(You can return the display in settings)</span>
-                    </div>
+                  </label>
+                  <div class="modal-put-items__bottom__txt">
+                    <span>(You can return the display in settings)</span>
                   </div>
                 </div>
-                <div class="modal-put-items__tab js-load-content" data-url="/get-my-inventories?get=refresh" data-size="modal-put-items_lg">
-                  <div class="modal-items__top-text">
-                    <span>Choose items you want to add to the game and confirm you choice clicking the &quot;Make Deposit&quot; button.
+              </div>
+              <div class="modal-put-items__tab js-load-content" data-url="/get-my-inventories?get=refresh" data-size="modal-put-items_lg">
+                <div class="modal-items__top-text">
+                  <span>Choose items you want to add to the game and confirm you choice clicking the &quot;Make Deposit&quot; button.
                               <br>
                               Deposit sum minimum <span  style="color: #0be0ac !important; font-weight: bold;">1<svg class="icon-usd cash-icon"><use xlink:href="#icon-usd" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>                              </span> | Maximum deposit: <span style="color: #0be0ac !important; font-weight: bold;">10</span> items for the bet</span>
+                </div>
+                <div class="modal-items__sort">
+                  <div class="modal-items__sort__left js-sort-items">
+                    <span>Sort by:</span>
+                    <a href="#" data-sort="down" class="active">Price (descending)</a>
+                    <a href="#" data-sort="up">Price (ascending)</a>
                   </div>
-                  <div class="modal-items__sort">
-                    <div class="modal-items__sort__left js-sort-items">
-                      <span>Sort by:</span>
-                      <a href="#" data-sort="down" class="active">Price (descending)</a>
-                      <a href="#" data-sort="up">Price (ascending)</a>
-                    </div>
-                    <div class="modal-items__sort__right">
-                      <input type="text" placeholder="Search">
-                      <button type="submit">
-                        <svg class="icon__svg icon-search">
-                          <use xlink:href="#icon-search" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                        </svg>
-                      </button>
-                    </div>
+                  <div class="modal-items__sort__right">
+                    <input type="text" placeholder="Search">
+                    <button type="submit">
+                      <svg class="icon__svg icon-search">
+                        <use xlink:href="#icon-search" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                      </svg>
+                    </button>
                   </div>
-                  <div class="modal-items__items">
-                    <div class="modal-items__items-inn clearfix js-load-content--target">
-                    </div>
+                </div>
+                <div class="modal-items__items">
+                  <div class="modal-items__items-inn clearfix js-load-content--target">
                   </div>
-                  <div class="modal-items__total">
-                    <div class="modal-items__total__left">
-                      <div class="choses">
-                        <span class="text">Select your side:</span>
-                        <img class="t" data-select="t" src="/money/t.png">
-                        <img class="ct" data-select="ct" src="/money/ct.png">
-                      </div>
-                      <div class="modal-items__price">
-                        not chosen
-                      </div>
-                      <div class="modal-items__top-text">
-                        Deposit sum minimum <span style="color: #0be0ac !important; font-weight: bold;">1<svg class="icon-usd cash-icon"><use xlink:href="#icon-usd" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>                              </span> | Maximum deposit: <span style="color: #0be0ac !important; font-weight: bold;">10</span> items for the bet</span>
-                      </div>
+                </div>
+                <div class="modal-items__total">
+                  <div class="modal-items__total__left">
+                    <div class="choses">
+                      <span class="text">Select your side:</span>
+                      <img class="t" data-select="t" src="/money/t.png">
+                      <img class="ct" data-select="ct" src="/money/ct.png">
                     </div>
-                    <div class="modal-items__total__right">
-                      <button class="btn btn_md btn_orange btn_full js-next-modal-tab disabled modal-godeposit-join">
-                        <span>MAKE DEPOSIT</span>
-                      </button>
-                      <button class="btn btn_md btn_silver js-modal-close">
-                        <span>CANCEL</span>
-                      </button>
+                    <div class="modal-items__price">
+                      not chosen
+                    </div>
+                    <div class="modal-items__top-text">
+                      Deposit sum minimum <span style="color: #0be0ac !important; font-weight: bold;">1<svg class="icon-usd cash-icon"><use xlink:href="#icon-usd" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>                              </span> | Maximum deposit: <span style="color: #0be0ac !important; font-weight: bold;">10</span> items for the bet</span>
                     </div>
                   </div>
-                  <!--             <div class="modal-items__help">
+                  <div class="modal-items__total__right">
+                    <button class="btn btn_md btn_orange btn_full js-next-modal-tab disabled modal-godeposit-join">
+                      <span>MAKE DEPOSIT</span>
+                    </button>
+                    <button class="btn btn_md btn_silver js-modal-close">
+                      <span>CANCEL</span>
+                    </button>
+                  </div>
+                </div>
+                <!--             <div class="modal-items__help">
               <span>Got problems? <a href="" target="_blank">Give items to bot (via Steam)</a></span>
             </div> -->
+              </div>
+              <div class="modal-put-items__tab laststep offerSucces" data-size="modal-put-items_md">
+                <div class="modal-items__confirm">
+                  <p>Trade is successfully sent! Confirtm in Steam to continue.</p>
+                  <p class="danger">When you confirm the trade make sure the secret code matches! Otherwise you can lose your items!</p>
+                  <p>You will be added to the line after you accept the trade!</p>
                 </div>
-                <div class="modal-put-items__tab laststep offerSucces" data-size="modal-put-items_md">
-                  <div class="modal-items__confirm">
-                    <p>Trade is successfully sent! Confirtm in Steam to continue.</p>
-                    <p class="danger">When you confirm the trade make sure the secret code matches! Otherwise you can lose your items!</p>
-                    <p>You will be added to the line after you accept the trade!</p>
-                  </div>
-                  <div class="modal-items__confirm__footer">
-                    <div class="modal-items__confirm__row">
-                      <div class="modal-items__confirm__col">
-                        <div class="modal-items__confirm__time">
-                          <span>Time left:</span>
-                          <span class="modal-items__confirm__timer">
+                <div class="modal-items__confirm__footer">
+                  <div class="modal-items__confirm__row">
+                    <div class="modal-items__confirm__col">
+                      <div class="modal-items__confirm__time">
+                        <span>Time left:</span>
+                        <span class="modal-items__confirm__timer">
                                             <svg class="icon icon__svg icon-timer">
                                               <use xlink:href="#icon-timer" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
                                             </svg>
                                             <span class="js-timer">02:00</span>
-                          </span>
-                        </div>
-                      </div>
-                      <div class="modal-items__confirm__col">
-                        <div class="modal-items__price modal-items__price_md">
-                          <span class="modal-items__price__items">1 предм.</span>—
-                          <svg class="icon-usd cash-icon">
-                            <use xlink:href="#icon-usd" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                          </svg><span class="modal-items__price__count">6.743</span>
-                        </div>
+                        </span>
                       </div>
                     </div>
-                    <div class="modal-items__confirm__row">
-                      <div class="modal-items__confirm__col">
-                        <div class="modal-items__confirm__code">
-                          <span>Secret code: </span>
-                          <b></b>
-                        </div>
+                    <div class="modal-items__confirm__col">
+                      <div class="modal-items__price modal-items__price_md">
+                        <span class="modal-items__price__items">1 предм.</span>—
+                        <svg class="icon-usd cash-icon">
+                          <use xlink:href="#icon-usd" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                        </svg><span class="modal-items__price__count">6.743</span>
                       </div>
-                      <div class="modal-items__confirm__col">
-                        <div class="modal-items__confirm__group">
-                          <button class="btn btn_md btn_green btn_full acceptDepositMe">
-                            <span>ACCEPT TRADE</span>
-                          </button>
-                          <button class="btn btn_md btn_silver js-modal-close">
-                            <span>CANCEL</span>
-                          </button>
-                        </div>
+                    </div>
+                  </div>
+                  <div class="modal-items__confirm__row">
+                    <div class="modal-items__confirm__col">
+                      <div class="modal-items__confirm__code">
+                        <span>Secret code: </span>
+                        <b></b>
+                      </div>
+                    </div>
+                    <div class="modal-items__confirm__col">
+                      <div class="modal-items__confirm__group">
+                        <button class="btn btn_md btn_green btn_full acceptDepositMe">
+                          <span>ACCEPT TRADE</span>
+                        </button>
+                        <button class="btn btn_md btn_silver js-modal-close">
+                          <span>CANCEL</span>
+                        </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="loader--container">
-                  <div class="loader__cnt">
-                    <div class="loader__spin"></div>
-                    <div class="loader__ttl">Loading</div>
-                  </div>
+              </div>
+              <div class="loader--container">
+                <div class="loader__cnt">
+                  <div class="loader__spin"></div>
+                  <div class="loader__ttl">Loading</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- endmodal -->
       </div>
-      <div class="footer-block">
-        <div class="footer-content">
-          <div class="left-link">
-            <a href="/about">About site</a>
-            <span>|</span>
-            <a href="/agreement">User agreement</a>
-            <span>|</span>
-            <a href="/privacy-policy">Privacy policy</a>
-          </div>
-          <div class="right-text">
-            <span>All rights reserved © 2017 CSFATE</span>
-          </div>
+      <!-- endmodal -->
+    </div>
+    <div class="footer-block">
+      <div class="footer-content">
+        <div class="left-link">
+          <a href="/about">About site</a>
+          <span>|</span>
+          <a href="/agreement">User agreement</a>
+          <span>|</span>
+          <a href="/privacy-policy">Privacy policy</a>
+        </div>
+        <div class="right-text">
+          <span>All rights reserved © 2017 CSFATE</span>
         </div>
       </div>
     </div>
+  </div>
   </div>
   <!-- modal balance-->
   <div id="balanceModal" class="modal">
@@ -1725,6 +1825,9 @@
     </div>
   </div>
   <!-- /modal balance-->
+  <script>
+  $('.b-c-chests_container').perfectScrollbar();
+  </script>
 </body>
 
 </html>

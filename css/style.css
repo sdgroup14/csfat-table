@@ -12,53 +12,423 @@
   max-width: 1170px; }
   .b-cgames * {
     box-sizing: border-box; }
-  .b-cgames .b-cgames-header-item-cell_player {
-    min-width: 202px; }
-  .b-cgames .b-cgames-header-item-cell_items {
-    min-width: 33%; }
-  .b-cgames .b-cgames-header-item-cell_value {
-    min-width: 206px; }
-  .b-cgames .b-cgames-header-item-cell_status {
-    min-width: 164px; }
-  .b-cgames .b-cgames-header-item-cell_winact {
+  .b-cgames .b-cgames-item__player {
+    max-width: 17.2%; }
+  .b-cgames .b-cgames-item__items {
+    max-width: 33%;
+    overflow: hidden;
+    position: relative; }
+    .b-cgames .b-cgames-item__items .b-c-chests_container {
+      width: 100%;
+      position: relative;
+      white-space: nowrap;
+      overflow: auto; }
+      .b-cgames .b-cgames-item__items .b-c-chests_container:after {
+        display: inline-block;
+        content: '';
+        width: .01%;
+        visibility: hidden;
+        height: 97px;
+        background-color: transparent;
+        vertical-align: middle; }
+    .b-cgames .b-cgames-item__items .b-cgames-info-item_tint {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to left, #2a333d, transparent);
+      pointer-events: none; }
+  .b-cgames .b-cgames-item__value {
+    max-width: 17.6%; }
+  .b-cgames .b-cgames-item__status {
+    max-width: 14%; }
+  .b-cgames .b-cgames-item__winact {
     float: right;
-    min-width: 200px; }
+    max-width: 16.2%; }
+  .b-cgames .b-cgames-item__player,
+  .b-cgames .b-cgames-item__items,
+  .b-cgames .b-cgames-item__value,
+  .b-cgames .b-cgames-item__status,
+  .b-cgames .b-cgames-item__winact {
+    width: 100%; }
   .b-cgames .b-cgames-header {
     background-color: #171c21;
     font-size: 0;
     line-height: 0;
     height: 34px; }
-  .b-cgames .b-cgames-header-item-cell {
-    font-family: 'Pragmatica Medium', sans-serif;
+  .b-cgames .b-cgames-header-item_cell,
+  .b-cgames .b-cgames-info-item_cell {
     display: block;
     float: left;
     line-height: 34px;
-    height: 34px;
     font-size: 13px;
-    color: #4e5866;
     text-align: center; }
-  .b-cgames .b-cgames-header-item-cell:last-child {
+  .b-cgames .b-cgames-info-item_cell__wrapper {
+    display: inline-block;
+    vertical-align: middle; }
+  .b-cgames .b-cgames-header-item_cell:last-child,
+  .b-cgames .b-cgames-info-item_cell:last-child {
     float: right; }
-  .b-cgames .b-cgames-info-item-row {
+  .b-cgames .b-cgames-header-item_cell {
+    font-family: 'Pragmatica Medium', sans-serif;
+    color: #4e5866; }
+  .b-cgames .b-cgames-info-item_row {
     line-height: 0;
     font-size: 0;
     background-color: #2a333d;
     height: 97px; }
-  .b-cgames .b-cgames-info-item-row:nth-child(even) {
+  .b-cgames .b-cgames-info .b-cgames-item__player,
+  .b-cgames .b-cgames-info .b-cgames-item__value,
+  .b-cgames .b-cgames-info .b-cgames-item__status,
+  .b-cgames .b-cgames-info .b-cgames-item__winact {
+    width: 100%; }
+    .b-cgames .b-cgames-info .b-cgames-item__player:after,
+    .b-cgames .b-cgames-info .b-cgames-item__value:after,
+    .b-cgames .b-cgames-info .b-cgames-item__status:after,
+    .b-cgames .b-cgames-info .b-cgames-item__winact:after {
+      display: inline-block;
+      content: '';
+      width: .01%;
+      visibility: hidden;
+      height: 97px;
+      background-color: transparent;
+      vertical-align: middle; }
+  .b-cgames .b-cgames-info-item_row:nth-child(even) {
     background-color: #4e5866; }
-  .b-cgames .b-cgames-info-item-cell {
-    float: left;
-    text-align: center;
-    font-size: 13px;
-    line-height: 34px; }
-    .b-cgames .b-cgames-info-item-cell img {
-      max-width: 20px; }
-  .b-cgames .b-cgames-info-item-cell:last-child {
-    float: right; }
-  .b-cgames .b-c-chest-wrap {
-    float: left; }
-    .b-cgames .b-c-chest-wrap .b-c-chest-price {
+    .b-cgames .b-cgames-info-item_row:nth-child(even) .b-cgames-item__items .b-c-chests-counter-container {
+      color: #2a333d; }
+    .b-cgames .b-cgames-info-item_row:nth-child(even) .b-cgames-item__items .b-cgames-info-item_tint {
+      background: linear-gradient(to left, #4e5866, transparent); }
+  .b-cgames .b-cgames-item__player .b-cgames-info-item_cell__wrapper {
+    position: relative; }
+  .b-cgames .b-cgames-item__player .b-c-player-img {
+    overflow: hidden;
+    max-width: 49.6px;
+    border-radius: 50%; }
+  .b-cgames .b-cgames-item__player .b-c-player-img__team {
+    position: absolute;
+    left: -6px;
+    top: -6px;
+    width: 25px;
+    height: 25px;
+    line-height: 0;
+    font-size: 0; }
+  .b-cgames .b-cgames-item__value .b-cgames-info-item_cell__wrapper {
+    max-width: 90%; }
+  .b-cgames .b-cgames-item__value .b-c__value-item {
+    margin: 0;
+    font-family: "Pragmatica Medium", sans-serif;
+    color: #d2d7dd;
+    font-size: 14px;
+    line-height: 16px;
+    vertical-align: top;
+    margin: 7px 0; }
+  .b-cgames .b-cgames-item__value .b-c__value-cash-icon {
+    display: inline-block;
+    vertical-align: top; }
+    .b-cgames .b-cgames-item__value .b-c__value-cash-icon svg {
       display: block;
-      text-align: center; }
+      font-size: 12px;
+      width: 8.4px;
+      height: 14px;
+      line-height: 14px; }
+  .b-cgames .b-cgames-item__value div:last-child {
+    font-size: 12px;
+    line-height: 14px; }
+  .b-cgames .b-cgames-item__items {
+    position: relative;
+    width: 95%;
+    text-align: left; }
+    .b-cgames .b-cgames-item__items:after {
+      display: none; }
+    .b-cgames .b-cgames-item__items .b-c-chest__wrapper {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      vertical-align: middle; }
+      .b-cgames .b-cgames-item__items .b-c-chest__wrapper .b-c-chest__price {
+        display: block;
+        line-height: 1.1;
+        text-align: center;
+        font-family: "Pragmatica Book";
+        font-size: 11px;
+        color: #93979c; }
+      .b-cgames .b-cgames-item__items .b-c-chest__wrapper:hover .b-c-chest__tooltip {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        margin-top: 0; }
+      .b-cgames .b-cgames-item__items .b-c-chest__wrapper .b-c-chest__tooltip {
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        margin-top: 18px;
+        width: 240px;
+        margin-left: -120px;
+        color: #fff;
+        z-index: 100;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 11px;
+        line-height: 14px;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        -webkit-transition: opacity 0.5s ease, visibility 0.5s ease, margin-top 0.5s ease;
+        -o-transition: opacity 0.5s ease, visibility 0.5s ease, margin-top 0.5s ease;
+        -moz-transition: opacity 0.5s ease, visibility 0.5s ease, margin-top 0.5s ease;
+        transition: opacity 0.5s ease, visibility 0.5s ease, margin-top 0.5s ease;
+        font-family: 'Pragmatica Book';
+        text-align: center;
+        margin-top: -10px;
+        font-size: 7px;
+        line-height: 0px;
+        margin-top: 0px;
+        width: 100%;
+        white-space: nowrap;
+        margin-left: -45px; }
+      .b-cgames .b-cgames-item__items .b-c-chest__wrapper .b-c-chest__tooltip:after {
+        position: absolute;
+        display: block;
+        content: '';
+        bottom: 100%;
+        left: 50%;
+        margin-left: -9px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 9px 9px 9px;
+        border-color: transparent transparent #2a333d transparent; }
+      .b-cgames .b-cgames-item__items .b-c-chest__wrapper .b-c-chest__tooltip span {
+        display: inline-block;
+        vertical-align: top;
+        background: #2a333d;
+        padding: 8px 12px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px; }
+    .b-cgames .b-cgames-item__items .b-c-chests-counter-container {
+      position: absolute;
+      font-family: "Pragmatica Medium", sans-serif;
+      left: 0;
+      top: 8px;
+      font-size: 11px;
+      line-height: 1.2;
+      color: #4e5866; }
+  .b-cgames .b-cgames-item__items2 {
+    position: relative;
+    width: 95%;
+    text-align: left; }
+    .b-cgames .b-cgames-item__items2:after {
+      display: none; }
+    .b-cgames .b-cgames-item__items2 .b-c-chest__wrapper {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      vertical-align: middle; }
+      .b-cgames .b-cgames-item__items2 .b-c-chest__wrapper .b-c-chest__price {
+        display: block;
+        line-height: 1.1;
+        text-align: center;
+        font-family: "Pragmatica Book";
+        font-size: 11px;
+        color: #93979c; }
+      .b-cgames .b-cgames-item__items2 .b-c-chest__wrapper:hover .b-c-chest__tooltips {
+        opacity: 1;
+        visibility: visible; }
+      .b-cgames .b-cgames-item__items2 .b-c-chest__wrapper .b-c-chest__tooltips {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.5s ease, visibility 0.5s ease, margin-top 0.5s ease;
+        font-family: 'Pragmatica Book';
+        text-align: center;
+        line-height: 0px;
+        width: 25px;
+        padding: 0; }
+      .b-cgames .b-cgames-item__items2 .b-c-chest__wrapper .b-c-chest__tooltips span {
+        display: inline-block;
+        vertical-align: top;
+        background: #2a333d;
+        background: rgba(42, 51, 61, 0.6);
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        white-space: normal;
+        font-size: 11px;
+        line-height: 13px;
+        padding: 3px; }
+    .b-cgames .b-cgames-item__items2 .b-c-chests-counter-container {
+      position: absolute;
+      font-family: "Pragmatica Medium", sans-serif;
+      left: 0;
+      top: 8px;
+      font-size: 11px;
+      line-height: 1.2;
+      color: #4e5866; }
+  .b-cgames .b-cgames-item__items {
+    position: relative;
+    width: 95%;
+    text-align: left; }
+    .b-cgames .b-cgames-item__items:after {
+      display: none; }
+    .b-cgames .b-cgames-item__items .b-c-chest__wrapper {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      vertical-align: middle; }
+      .b-cgames .b-cgames-item__items .b-c-chest__wrapper .b-c-chest__price {
+        display: block;
+        line-height: 1.1;
+        text-align: center;
+        font-family: "Pragmatica Book";
+        font-size: 11px;
+        color: #93979c; }
+      .b-cgames .b-cgames-item__items .b-c-chest__wrapper:hover .b-c-chest__tooltip1 {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        margin-top: 0; }
+      .b-cgames .b-cgames-item__items .b-c-chest__wrapper .b-c-chest__tooltip1 {
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        margin-top: 18px;
+        width: 240px;
+        margin-left: -120px;
+        color: #fff;
+        z-index: 100;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 11px;
+        line-height: 14px;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        -webkit-transition: opacity 0.5s ease, visibility 0.5s ease, margin-top 0.5s ease;
+        -o-transition: opacity 0.5s ease, visibility 0.5s ease, margin-top 0.5s ease;
+        -moz-transition: opacity 0.5s ease, visibility 0.5s ease, margin-top 0.5s ease;
+        transition: opacity 0.5s ease, visibility 0.5s ease, margin-top 0.5s ease;
+        font-family: 'Pragmatica Book';
+        text-align: center;
+        margin-top: -10px;
+        font-size: 7px;
+        line-height: 0px;
+        margin-top: 0px;
+        width: 100%;
+        white-space: nowrap;
+        margin-left: -45px; }
+      .b-cgames .b-cgames-item__items .b-c-chest__wrapper .b-c-chest__tooltip:after {
+        position: absolute;
+        display: block;
+        content: '';
+        bottom: 100%;
+        left: 50%;
+        margin-left: -9px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 9px 9px 9px;
+        border-color: transparent transparent #2a333d transparent; }
+      .b-cgames .b-cgames-item__items .b-c-chest__wrapper .b-c-chest__tooltip span {
+        display: inline-block;
+        vertical-align: top;
+        background: #2a333d;
+        padding: 8px 12px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px; }
+    .b-cgames .b-cgames-item__items .b-c-chests-counter-container {
+      position: absolute;
+      font-family: "Pragmatica Medium", sans-serif;
+      left: 0;
+      top: 8px;
+      font-size: 11px;
+      line-height: 1.2;
+      color: #4e5866; }
+  .b-cgames .b-cgames-item__winact .b-cgames-info-item_cell__wrapper {
+    font-size: 0;
+    line-height: 0;
+    max-width: 95%; }
+  .b-cgames .b-cgames-item__winact .b-cgames-item__winact_winner {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin: 1px 22px 3px; }
+    .b-cgames .b-cgames-item__winact .b-cgames-item__winact_winner .b-cgames-info-item_cell__wrapper {
+      position: relative; }
+    .b-cgames .b-cgames-item__winact .b-cgames-item__winact_winner .b-c-player-img {
+      overflow: hidden;
+      width: 36px;
+      border-radius: 50%; }
+      .b-cgames .b-cgames-item__winact .b-cgames-item__winact_winner .b-c-player-img img {
+        width: 36px;
+        margin: 0 auto;
+        display: inline-block; }
+    .b-cgames .b-cgames-item__winact .b-cgames-item__winact_winner .b-c-player-img__team {
+      position: absolute;
+      left: -4px;
+      top: -4px;
+      width: 18px;
+      height: 18px;
+      line-height: 0;
+      font-size: 0; }
+  .b-cgames .b-cgames-item__winact .b-cgames-btn {
+    font: inherit;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: transparent;
+    -webkit-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    display: inline-block;
+    width: 70px;
+    line-height: 38px;
+    font-size: 13px;
+    height: 38px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: linear-gradient(180deg, #0be0ac 0%, #09c97a 100%);
+    transition: bottom 0.2s ease;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px; }
+    .b-cgames .b-cgames-item__winact .b-cgames-btn:hover {
+      background: linear-gradient(180deg, #0abb90 0%, #09a967 100%); }
+  .b-cgames .b-cgames-item__winact .b-cgames-btn {
+    margin: 3px 5px; }
+  .b-cgames .b-cgames-item__winact .b-cgames-btn_orange {
+    background: linear-gradient(180deg, #ff9957 0%, #f57420 100%); }
+    .b-cgames .b-cgames-item__winact .b-cgames-btn_orange:hover {
+      background: linear-gradient(180deg, #e4894e 0%, #d6661d 100%); }
+  .b-cgames .b-cgames-item__status .b-c__status__check {
+    font-family: "Pragmatica Medium", sans-serif; }
+  .b-cgames .b-cgames-item__status .b-c__status__check_open {
+    color: #0abb90; }
+  .b-cgames .b-cgames-item__status .b-cgames-info-item_cell__wrapper {
+    position: relative;
+    height: 49.6px; }
+  .b-cgames .b-cgames-item__status .b-cgames-item__status_img {
+    display: inline-block; }
+    .b-cgames .b-cgames-item__status .b-cgames-item__status_img .b-c-player-img {
+      overflow: hidden;
+      max-width: 49.6px;
+      border-radius: 50%; }
 
 /*# sourceMappingURL=style.css.map */
